@@ -9,7 +9,7 @@ Rules:
 
 The first line of the commit message should be a short summary of the changes made. This should be followed by a blank line and then a more detailed description of the changes, if necessary.
 
-The summary line starts with a type** (`feat`, `fix`, `docs`, etc.) based on the primary intent 
+The summary line starts with a type (`feat`, `fix`, `docs`, etc.) based on the primary intent 
 Use these types:
 - `feat: add new user authentication module`
 - `fix: resolve issue with data fetching.`

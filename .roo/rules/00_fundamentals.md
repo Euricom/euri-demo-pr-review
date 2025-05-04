@@ -27,4 +27,4 @@
 - NEVER delete old comments - unless they are obviously wrong / Obsolete
 - Include LOTS of explanatory comments in your code. ALWAYS write well documented code.
 - Document all changes and their reasoning IN THE COMMENTS YOU WRITING
-- When writing comments, use clear and easy-to-understand language, with sort sentences.
+- When writing comments, use clear and easy-to-understand language, with short sentences.
