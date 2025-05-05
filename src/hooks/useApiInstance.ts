@@ -39,7 +39,7 @@ export const useApiInstance = () => {
     },
     put<TData = unknown>(
       url: string,
-      body: Record<string, any>,
+      body: Record<string, unknown>,
       options: Omit<FetchOptions<"json">, "method" | "body"> = {}
     ) {
       // console.log("put", url, body, options);
@@ -47,7 +47,7 @@ export const useApiInstance = () => {
     },
     post<TData = unknown>(
       url: string,
-      body: Record<string, any>,
+      body: Record<string, unknown>,
       options: Omit<FetchOptions<"json">, "method" | "body"> = {}
     ) {
       // console.log("post", url, body, options);
