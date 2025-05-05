@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/coderabbit-overrides.v2.json
+language: "en"
+early_access: false
+reviews:
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  path_filters:
+    - "!dist/**"
+    - "!**/.xml"
+  path_instructions:
+    - path: "**/*.spec.ts"
+      instructions: |
+        "Assess the unit test code employing the Vitest testing framework. Confirm that:
+        - The tests adhere to Vitest's established best practices.
+        - Test descriptions are sufficiently detailed to clarify the purpose of each test."
+    - path: "**/*.spec.tsx"
+      instructions: |
+        "For tailwind utility classes, follow version 4 syntax, see https://tailwindcss.com/docs/upgrade-guide"
+  auto_review:
+    enabled: true
+    ignore_title_keywords:
+      - "WIP"
+      - "DO NOT MERGE"
+    drafts: false
+    base_branches:
+      - "main"
+      - "next"
+chat:
+  auto_reply: true
