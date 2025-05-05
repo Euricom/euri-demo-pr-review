@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { FetchOptions, ofetch } from "ofetch";
 import useAuth from "./useAuth";
 import { env } from "@/env";
@@ -13,7 +12,7 @@ export const useApiInstance = () => {
         options.headers = {
           ...options.headers,
           Authorization: `bearer ${token}`,
-        } as any;
+        } as Headers;
       }
     },
     async onResponseError({ request, response }) {
